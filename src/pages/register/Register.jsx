@@ -3,7 +3,32 @@ import './register.scss'
 
 const Register = () => {
   return (
-    <div>Register</div>
+    <div className='register'>
+      <div className="card">
+
+        {/* left side */}
+        <div className="left">
+          <h1>Register</h1>
+          <form>
+            <input type="text" placeholder='Name'/>
+            <input type="text" placeholder='Username'/>
+            <input type="email" placeholder='Email'/>
+            <input type="password" placeholder='******' />
+            <button>Register</button>
+          </form>
+        </div>
+
+        {/* right side */}
+        <div className="right">
+          <h1>Gama Media.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab soluta quod id beatae excepturi ad, 
+            eaque dignissimos repellat iure voluptate.</p>
+            <span>Have an account already ?</span>
+            <button>Login</button>
+        </div>
+
+      </div>
+    </div>
   )
 }
 
