@@ -1,0 +1,45 @@
+.Navbar {
+  font-family: 'Monda', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+  box-shadow: 0px 10px 10px -15px #111;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-weight: bold;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 0.5px solid #482673;
+      border-radius: 50px;
+      padding: 5px;
+      input {
+        outline: none;
+        border: none;
+        width: 500px;
+        caret-color: #482673;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .user {
+      display: flex;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
