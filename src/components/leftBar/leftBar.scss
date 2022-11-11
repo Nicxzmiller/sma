@@ -1,0 +1,24 @@
+.leftBar {
+  font-family: 'Monda', sans-serif;
+  display: flex;
+  .container {
+    padding: 20px;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+        }
+      }
+    }
+  }
+}
