@@ -11,6 +11,8 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import MessageIcon from '@mui/icons-material/Message';
 import PaidIcon from '@mui/icons-material/Paid';
 import BrowseGalleryIcon from '@mui/icons-material/BrowseGallery';
+import TuneIcon from '@mui/icons-material/Tune';
+import LeaderboardIcon from '@mui/icons-material/Leaderboard';
 
 const LeftBar = () => {
   return (
@@ -57,6 +59,23 @@ const LeftBar = () => {
           <div className="item">
             <MessageIcon sx={{ color: '#482673' }} />
             <span>Messages</span>
+          </div>
+        </div>
+        <hr />
+        <div className="menu">
+          <span>Others</span>
+
+          <div className="item">
+            <LeaderboardIcon sx={{ color: '#482673' }} />
+            <span>Analytics</span>
+          </div>
+          <div className="item">
+            <CollectionsIcon sx={{ color: '#482673' }} />
+            <span>Gallery</span>
+          </div>
+          <div className="item">
+            <TuneIcon sx={{ color: '#482673' }} />
+            <span>Settings</span>
           </div>
         </div>
       </div>

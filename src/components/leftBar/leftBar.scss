@@ -1,12 +1,17 @@
 .leftBar {
   font-family: 'Monda', sans-serif;
   display: flex;
+  //   box-shadow: 10px 0px 10px -15px #111;
   .container {
     padding: 20px;
     .menu {
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      span {
+        font-size: 12px;
+      }
       .user {
         display: flex;
         align-items: center;
@@ -16,9 +21,17 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
         span {
+          font-size: 14px;
         }
       }
+    }
+    hr {
+      margin: 20px 0px;
+      border: none;
+      height: 0.5px;
+      background-color: lightgrey;
     }
   }
 }
