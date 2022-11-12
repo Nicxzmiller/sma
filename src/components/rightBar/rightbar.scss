@@ -1,0 +1,71 @@
+.rightBar {
+  font-family: 'Mona', sans-serif;
+  flex: 3;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container {
+    padding: 20px;
+
+    .item {
+      box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
+      -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
+      -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
+      border-radius: 7px;
+      padding: 20px;
+      span {
+        color: gray;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            color: #482673;
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          gap: 10px;
+          button {
+            border: none;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:first-child {
+              background-color: #482673;
+            }
+            &:last-child {
+              background-color: #f0544f;
+            }
+          }
+        }
+      }
+    }
+  }
+}

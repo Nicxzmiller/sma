@@ -13,6 +13,7 @@ import PaidIcon from '@mui/icons-material/Paid';
 import BrowseGalleryIcon from '@mui/icons-material/BrowseGallery';
 import TuneIcon from '@mui/icons-material/Tune';
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
+import * as Sentry from '@sentry/react';
 
 const LeftBar = () => {
   return (
@@ -83,4 +84,4 @@ const LeftBar = () => {
   );
 };
 
-export default LeftBar;
+export default Sentry.withProfiler(LeftBar, { name: 'LeftBar' });

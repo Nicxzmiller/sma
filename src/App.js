@@ -2,6 +2,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
+import './app.scss';
 import Profile from './pages/profile/Profile';
 import LeftBar from './components/leftBar/LeftBar';
 import RightBar from './components/rightBar/RightBar';
@@ -24,7 +25,9 @@ function App() {
 
         <div style={{ display: 'flex' }}>
           <LeftBar />
-          <Outlet />
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
           <RightBar />
         </div>
       </div>
@@ -75,4 +78,4 @@ function App() {
   );
 }
 
-export default Sentry.withProfiler(App);
+export default Sentry.withProfiler(App, { name: 'GammaSocial' });

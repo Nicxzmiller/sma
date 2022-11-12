@@ -1,6 +1,15 @@
 .leftBar {
   font-family: 'Monda', sans-serif;
   display: flex;
+  flex: 2;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
   //   box-shadow: 10px 0px 10px -15px #111;
   .container {
     padding: 20px;
