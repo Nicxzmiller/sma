@@ -19,6 +19,7 @@
       -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
       border-radius: 7px;
       padding: 20px;
+      margin-bottom: 20px;
       span {
         color: gray;
       }
@@ -31,6 +32,7 @@
           display: flex;
           align-items: center;
           gap: 10px;
+          position: relative;
 
           img {
             height: 30px;
@@ -38,12 +40,44 @@
             border-radius: 50%;
             object-fit: cover;
           }
+          .online {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: limegreen;
+            position: absolute;
+            top: 0;
+            left: 22px;
+          }
+
+          p {
+            color: gray;
+            font-size: 11px;
+          }
 
           span {
             color: #482673;
             font-size: 12px;
             font-weight: 600;
           }
+        }
+
+        .Chatbuttons {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          button {
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            background-color: limegreen;
+          }
+        }
+
+        span {
+          font-size: 11px;
         }
         .buttons {
           display: flex;

@@ -6,6 +6,7 @@ const RightBar = () => {
   return (
     <div className="rightBar">
       <div className="container">
+        {/** suggested friends **/}
         <div className="item">
           <span>Suggested Friends</span>
           <div className="user">
@@ -36,6 +37,7 @@ const RightBar = () => {
           </div>
         </div>
 
+        {/** Latest activities **/}
         <div className="item">
           <span>Latest Activities</span>
           <div className="user">
@@ -63,6 +65,37 @@ const RightBar = () => {
               </p>
             </div>
             <span>3 mins ago</span>
+          </div>
+        </div>
+
+        {/** online friends **/}
+        <div className="item">
+          <span>Online Friends</span>
+          <div className="user">
+            <div className="userInfo">
+              <img
+                src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+              <div className="online" />
+              <span>Maxi Perez</span>
+            </div>
+            <div className="Chatbuttons">
+              <button className="chat">Send a message</button>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo">
+              <img
+                src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+              <div className="online" />
+              <span>Leo Neo</span>
+            </div>
+            <div className="Chatbuttons">
+              <button className="chat">Send a message</button>
+            </div>
           </div>
         </div>
       </div>
