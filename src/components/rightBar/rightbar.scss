@@ -1,101 +1,106 @@
+@import '../../style.scss';
+
 .rightBar {
-  font-family: 'Mona', sans-serif;
-  flex: 3;
-  position: sticky;
-  top: 70px;
-  height: calc(100vh - 70px);
-  overflow: scroll;
+  @include themify($themes) {
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    font-family: 'Mona', sans-serif;
+    background-color: themed('bgSoft');
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
-  .container {
-    padding: 20px;
-
-    .item {
-      box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
-      -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
-      -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
-      border-radius: 7px;
+    .container {
       padding: 20px;
-      margin-bottom: 20px;
-      span {
-        color: gray;
-      }
-      .user {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10px 0;
-        .userInfo {
+
+      .item {
+        box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
+        -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.29);
+        border-radius: 7px;
+        padding: 20px;
+        margin-bottom: 20px;
+        span {
+          color: gray;
+        }
+        .user {
           display: flex;
           align-items: center;
-          gap: 10px;
-          position: relative;
+          justify-content: space-between;
+          margin: 10px 0;
+          .userInfo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
 
-          img {
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
-          .online {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: limegreen;
-            position: absolute;
-            top: 0;
-            left: 22px;
+            img {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            .online {
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: limegreen;
+              position: absolute;
+              top: 0;
+              left: 22px;
+            }
+
+            p {
+              color: gray;
+              font-size: 11px;
+            }
+
+            span {
+              color: #482673;
+              font-size: 12px;
+              font-weight: 600;
+            }
           }
 
-          p {
-            color: gray;
-            font-size: 11px;
+          .Chatbuttons {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            button {
+              border: none;
+              padding: 5px;
+              cursor: pointer;
+              border-radius: 5px;
+              color: #fff;
+              background-color: limegreen;
+            }
           }
 
           span {
-            color: #482673;
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 11px;
           }
-        }
+          .buttons {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            button {
+              border: none;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+              border-radius: 5px;
 
-        .Chatbuttons {
-          display: flex;
-          align-items: center;
-          padding: 10px;
-          button {
-            border: none;
-            padding: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-            color: #fff;
-            background-color: limegreen;
-          }
-        }
-
-        span {
-          font-size: 11px;
-        }
-        .buttons {
-          display: flex;
-          align-items: center;
-          padding: 10px;
-          gap: 10px;
-          button {
-            border: none;
-            padding: 5px;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-
-            &:first-child {
-              background-color: #482673;
-            }
-            &:last-child {
-              background-color: #f0544f;
+              &:first-child {
+                background-color: #482673;
+              }
+              &:last-child {
+                background-color: #f0544f;
+              }
             }
           }
         }

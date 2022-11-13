@@ -81,7 +81,7 @@ const RightBar = () => {
               <span>Maxi Perez</span>
             </div>
             <div className="Chatbuttons">
-              <button className="chat">Send a message</button>
+              <button className="chat">Chat</button>
             </div>
           </div>
           <div className="user">
@@ -94,7 +94,7 @@ const RightBar = () => {
               <span>Leo Neo</span>
             </div>
             <div className="Chatbuttons">
-              <button className="chat">Send a message</button>
+              <button className="chat">Chat</button>
             </div>
           </div>
         </div>

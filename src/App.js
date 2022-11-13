@@ -2,7 +2,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
-import './app.scss';
+import './style.scss';
 import Profile from './pages/profile/Profile';
 import LeftBar from './components/leftBar/LeftBar';
 import RightBar from './components/rightBar/RightBar';
@@ -20,7 +20,7 @@ function App() {
 
   const Layout = () => {
     return (
-      <div>
+      <div className="theme-dark">
         <Navbar />
 
         <div style={{ display: 'flex' }}>

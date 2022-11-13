@@ -18,20 +18,20 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: 'none' }}>
           <span>GamaSocial</span>
         </Link>
-        <HomeOutlinedIcon sx={{ color: '#482673' }} />
-        <DarkModeOutlinedIcon sx={{ color: '#482673' }} />
-        <GridViewOutlinedIcon sx={{ color: '#482673' }} />
+        <HomeOutlinedIcon />
+        <DarkModeOutlinedIcon />
+        <GridViewOutlinedIcon />
         <div className="search">
-          <SearchOutlinedIcon sx={{ color: '#482673' }} />
+          <SearchOutlinedIcon />
           <input type="text" placeholder="Search..." />
         </div>
       </div>
       <div className="right">
-        <PersonOutlinedIcon sx={{ color: '#482673' }} />
-        <EmailOutlinedIcon sx={{ color: '#482673' }} />
-        <NotificationsNoneOutlinedIcon sx={{ color: '#482673' }} />
+        <PersonOutlinedIcon />
+        <EmailOutlinedIcon />
+        <NotificationsNoneOutlinedIcon />
         <div className="user">
-          <AccountCircleIcon sx={{ color: '#482673' }} />
+          <AccountCircleIcon />
           <span>Tier 2</span>
         </div>
       </div>

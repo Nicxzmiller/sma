@@ -1,46 +1,53 @@
+@import '../../style.scss';
+
 .leftBar {
-  font-family: 'Monda', sans-serif;
-  display: flex;
-  flex: 2;
-  position: sticky;
-  top: 70px;
-  height: calc(100vh - 70px);
-  overflow: scroll;
+  @include themify($themes) {
+    font-family: 'Monda', sans-serif;
+    display: flex;
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: themed('bg');
+    color: themed('textColor');
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  //   box-shadow: 10px 0px 10px -15px #111;
-  .container {
-    padding: 20px;
-    .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    //   box-shadow: 10px 0px 10px -15px #111;
+    .container {
+      padding: 20px;
 
-      span {
-        font-size: 12px;
+      hr {
+        border: none;
+        margin: 20px 0px;
+        height: 0.5px;
+        background-color: themed('border');
       }
-      .user {
+      .menu {
         display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
+        flex-direction: column;
+        gap: 15px;
+
         span {
-          font-size: 14px;
+          font-size: 12px;
+        }
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          span {
+            font-size: 14px;
+          }
         }
       }
-    }
-    hr {
-      margin: 20px 0px;
-      border: none;
-      height: 0.5px;
-      background-color: lightgrey;
     }
   }
 }
