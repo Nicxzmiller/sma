@@ -24,6 +24,7 @@
         border-radius: 7px;
         padding: 20px;
         margin-bottom: 20px;
+        background-color: themed('bg');
         span {
           color: gray;
         }
@@ -55,12 +56,12 @@
             }
 
             p {
-              color: gray;
+              color: themed('textColorSoft');
               font-size: 11px;
             }
 
             span {
-              color: #482673;
+              color: themed('icons');
               font-size: 12px;
               font-weight: 600;
             }

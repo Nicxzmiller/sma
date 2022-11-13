@@ -21,27 +21,27 @@ const LeftBar = () => {
       <div className="container">
         <div className="menu">
           <div className="user">
-            <AccountCircleIcon sx={{ color: '#482673' }} />
+            <AccountCircleIcon />
             <span>Tier 2</span>
           </div>
           <div className="item">
-            <Diversity3Icon sx={{ color: '#482673' }} />
+            <Diversity3Icon />
             <span>Friends</span>
           </div>
           <div className="item">
-            <GroupsIcon sx={{ color: '#482673' }} />
+            <GroupsIcon />
             <span>Groups</span>
           </div>
           <div className="item">
-            <StorefrontIcon sx={{ color: '#482673' }} />
+            <StorefrontIcon />
             <span>Marketplace</span>
           </div>
           <div className="item">
-            <OndemandVideoIcon sx={{ color: '#482673' }} />
+            <OndemandVideoIcon />
             <span>Watch</span>
           </div>
           <div className="item">
-            <BrowseGalleryIcon sx={{ color: '#482673' }} />
+            <BrowseGalleryIcon />
             <span>Memories</span>
           </div>
         </div>
@@ -50,15 +50,15 @@ const LeftBar = () => {
           <span>Shortcuts</span>
 
           <div className="item">
-            <CalendarMonthIcon sx={{ color: '#482673' }} />
+            <CalendarMonthIcon />
             <span>Events</span>
           </div>
           <div className="item">
-            <SportsEsportsIcon sx={{ color: '#482673' }} />
+            <SportsEsportsIcon />
             <span>Gaming</span>
           </div>
           <div className="item">
-            <MessageIcon sx={{ color: '#482673' }} />
+            <MessageIcon />
             <span>Messages</span>
           </div>
         </div>
@@ -67,15 +67,15 @@ const LeftBar = () => {
           <span>Others</span>
 
           <div className="item">
-            <LeaderboardIcon sx={{ color: '#482673' }} />
+            <LeaderboardIcon />
             <span>Analytics</span>
           </div>
           <div className="item">
-            <CollectionsIcon sx={{ color: '#482673' }} />
+            <CollectionsIcon />
             <span>Gallery</span>
           </div>
           <div className="item">
-            <TuneIcon sx={{ color: '#482673' }} />
+            <TuneIcon />
             <span>Settings</span>
           </div>
         </div>

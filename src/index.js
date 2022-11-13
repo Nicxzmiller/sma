@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import * as Sentry from '@sentry/react';
 import { BrowserTracing } from '@sentry/tracing';
 import App from './App';
+import { DarkModeContextProvider } from './context/darkModeContext';
 
 Sentry.init({
   dsn: 'https://50edc238a7bd4478bb4f369af4402b00@o4504098156838912.ingest.sentry.io/4504098174140416',
@@ -15,4 +16,8 @@ Sentry.init({
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <DarkModeContextProvider>
+    <App />
+  </DarkModeContextProvider>
+);

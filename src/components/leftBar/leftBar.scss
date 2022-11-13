@@ -4,7 +4,7 @@
   @include themify($themes) {
     font-family: 'Monda', sans-serif;
     display: flex;
-    flex: 2;
+    flex: 1;
     position: sticky;
     top: 70px;
     height: calc(100vh - 70px);
@@ -28,7 +28,7 @@
       .menu {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
 
         span {
           font-size: 12px;
@@ -43,6 +43,7 @@
           align-items: center;
           gap: 10px;
           cursor: pointer;
+
           span {
             font-size: 14px;
           }

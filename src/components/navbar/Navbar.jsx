@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import * as Sentry from '@sentry/react';
 
 import './navbar.scss';
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../../context/darkModeContext';
 
 const Navbar = () => {
+  const { toggle, darkMode } = useContext(DarkModeContext);
   return (
     <div className="Navbar">
       <div className="left">
@@ -19,7 +23,11 @@ const Navbar = () => {
           <span>GamaSocial</span>
         </Link>
         <HomeOutlinedIcon />
-        <DarkModeOutlinedIcon />
+        {darkMode ? (
+          <DarkModeOutlinedIcon onClick={toggle} />
+        ) : (
+          <WbSunnyOutlinedIcon onClick={toggle} />
+        )}
         <GridViewOutlinedIcon />
         <div className="search">
           <SearchOutlinedIcon />
@@ -39,4 +47,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Sentry.withProfiler(Navbar, { name: 'App' });
