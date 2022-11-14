@@ -1,11 +1,14 @@
 import React from 'react';
 import './home.scss';
 import * as sentry from '@sentry/react';
+import Stories from '../../components/stories/Stories';
+import Posts from '../../components/posts/Posts';
 
 const Home = () => {
   return (
     <div className="home">
-      <h1>Home</h1>
+      <Stories />
+      <Posts />
     </div>
   );
 };
