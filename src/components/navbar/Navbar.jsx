@@ -13,9 +13,11 @@ import * as Sentry from '@sentry/react';
 import './navbar.scss';
 import { Link } from 'react-router-dom';
 import { DarkModeContext } from '../../context/darkModeContext';
+import { AuthContext } from '../../context/authContext';
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
+  const { currentUser } = useContext(AuthContext);
   return (
     <div className="Navbar">
       <div className="left">
@@ -24,9 +26,9 @@ const Navbar = () => {
         </Link>
         <HomeOutlinedIcon />
         {darkMode ? (
-          <DarkModeOutlinedIcon onClick={toggle} />
-        ) : (
           <WbSunnyOutlinedIcon onClick={toggle} />
+        ) : (
+          <DarkModeOutlinedIcon onClick={toggle} />
         )}
         <GridViewOutlinedIcon />
         <div className="search">
@@ -40,7 +42,7 @@ const Navbar = () => {
         <NotificationsNoneOutlinedIcon />
         <div className="user">
           <AccountCircleIcon />
-          <span>Tier 2</span>
+          <span>{currentUser.name}</span>
         </div>
       </div>
     </div>

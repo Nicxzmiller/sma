@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './leftBar.scss';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -14,15 +14,17 @@ import BrowseGalleryIcon from '@mui/icons-material/BrowseGallery';
 import TuneIcon from '@mui/icons-material/Tune';
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
 import * as Sentry from '@sentry/react';
+import { AuthContext } from '../../context/authContext';
 
 const LeftBar = () => {
+  const { currentUser } = useContext(AuthContext);
   return (
     <div className="leftBar">
       <div className="container">
         <div className="menu">
           <div className="user">
             <AccountCircleIcon />
-            <span>Tier 2</span>
+            <span>{currentUser.name}</span>
           </div>
           <div className="item">
             <Diversity3Icon />
